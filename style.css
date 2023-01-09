@@ -197,6 +197,9 @@ textarea:focus {
         margin: 10px;
     }
 
+    .exibir-mensagem{
+        height: 380px;
+    }
     .exibir-mensagem img{
         width: 40%;
     }
