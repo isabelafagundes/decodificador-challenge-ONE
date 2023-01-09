@@ -1,2 +1,2 @@
 # decodificador-challenge-ONE
-Esta aplicação é capaz de criptografar, descriptografar e copiar uma determinada mensagem inserida pelo usuário.
+Este foi um desafio sugerido pela Oracle e Alura, dentro do programa ONE, para desenvolver um decodificador de texto com JavaScript. Esta aplicação é capaz de criptografar, descriptografar e copiar uma determinada mensagem inserida pelo usuário.
