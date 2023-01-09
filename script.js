@@ -75,6 +75,7 @@ function descriptografar(palavra){
         exibirMensagem.innerHTML = palavra;
         texto.innerHTML = '';
         imagem.style.display = 'none';
+        btnCopy.style.display = 'flex';
         mensagemValue = palavra;
     }
 
