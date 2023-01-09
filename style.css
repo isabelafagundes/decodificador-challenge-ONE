@@ -173,8 +173,39 @@ textarea:focus {
 
 @media screen and (max-width: 980px ) {
     main {
+        background: rgb(205, 224, 247);
         display: flex;
         flex-direction: column;
         align-items: center;
+        overflow: hidden;
+    }
+
+    .receber-mensagem{
+        width: auto;
+        margin: 10%;
+    }
+
+    .receber-mensagem textarea{
+        width: auto;
+    }
+
+    .btn p{
+        padding: 20px;
+    }
+
+    .btn button{
+        margin: 10px;
+    }
+
+    .exibir-mensagem img{
+        width: 40%;
+    }
+
+    #exibir-msg textarea{
+        height: auto;
+    }
+
+    #texto{
+        padding: 20px 70px;
     }
 }
