@@ -9,12 +9,16 @@ btnCripto.addEventListener('click', function(e){
     
     e.preventDefault();
 
+    const regex = /\W|_/;
     const mensagem = document.querySelector('#input');
     let mensagemValue = mensagem.value;
     
     if(mensagemValue == ''){
         alert("Digite um texto!");
-        console.log(textoExibidoValue);
+    }else if(!( mensagemValue == (mensagemValue.toLowerCase()) )){
+        alert("Use apenas letras minúsculas!");
+    }else if(regex.test(mensagemValue) == true){
+        alert("Não use caracteres especiais!");
     }else if(!(mensagemValue == '')){
         criptografar(mensagemValue);
     }
@@ -32,6 +36,10 @@ btnDescri.addEventListener('click', function(e){
     if(mensagemValue == ''){
         alert("Digite um texto!");
         console.log(textoExibidoValue);
+    }else if(!( mensagemValue == (mensagemValue.toLowerCase()) )){
+        alert("Use apenas letras minúsculas!");
+    }else if(regex.test(mensagemValue) == true){
+        alert("Não use caracteres especiais!");
     }else if(!(mensagemValue == '')){
         descriptografar(mensagemValue);
         descriptografar(textoExibidoValue);

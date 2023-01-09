@@ -30,6 +30,11 @@ nav a{
     color: white;
     font-size: 40px;
     text-align: right;
+    transition: 2s all;
+}
+
+nav a:hover{
+    color: rgb(38, 85, 145);
 }
 
 
@@ -47,7 +52,7 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
+    width: 500px;
     height: 470px;
     font-family: 'Almarai', sans-serif;
 
@@ -60,7 +65,7 @@ nav a{
     margin-top: 30px;
     font-size: 22px;
     color: rgb(92, 157, 242);
-    background: rgb(217, 226, 237);
+    background: transparent;
     border: none;
     resize: none;
     font-family: 'Almarai', sans-serif;
@@ -82,18 +87,25 @@ nav a{
     border-radius: 10px;
     font-size: 18px;
     font-family: 'Almarai', sans-serif;
+    margin: 0 20px;
 }
 
 #btn-cripto {
     background: rgb(92, 157, 242);
     border: 2px solid rgb(255, 255, 255);
     color: rgb(255, 255, 255);
+    transition: 2s all;
 }
 
 #btn-descri{
     background: rgb(255, 255, 255);
     border: 2px solid rgb(92, 157, 242);
     color: rgb(92, 157, 242);
+    transition: 2s all;
+}
+
+button:hover{
+    transform: scale(1.12);
 }
 
 .exibir-mensagem {
@@ -102,23 +114,28 @@ nav a{
     align-items: center;
     text-align: center;
     width: 400px;
-    height: 470px;
+    height: 520px;
     border-radius: 15px;
     background: white;
-    border: 2px solid rgb(92, 157, 242);
     white-space: normal;
     padding: 20px  0 0 0;
     font-family: 'Almarai', sans-serif;
+    box-shadow: 0 0 13px rgb(38, 85, 145);
 }
 
 .exibir-mensagem img{
     width: 250px;
     margin: 10px 20px;
+    transition: 2s all;
+}
+
+.exibir-mensagem img:hover {
+    transform: scale(1.1);
 }
 
 #texto{
     font-size: 20px;
-    padding: 10px 10px;
+    padding: 40px 20px;
     color: rgb(38, 85, 145);
 }
 
@@ -142,8 +159,21 @@ nav a{
     margin: 20px 0;
     padding: 10px 30px;
     border-radius: 10px;
+    transition: 2s all;
+}
+
+#copy:hover {
+    transform: scale(1.2);
 }
 
 textarea:focus {
     outline: 0;
+}
+
+@media screen and (max-width: 980px ) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
