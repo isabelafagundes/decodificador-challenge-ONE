@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
 
 body{
-    background: rgb(217, 226, 237);
+    background: linear-gradient(to top, rgb(128, 171, 224), white);
     font-family: 'Almarai', sans-serif;
+    height: 100vh;
 }
 
 header {
@@ -114,11 +115,11 @@ button:hover{
     align-items: center;
     text-align: center;
     width: 400px;
-    height: 520px;
+    height: 500px;
     border-radius: 15px;
     background: white;
     white-space: normal;
-    padding: 20px  0 0 0;
+    padding: 10px 0 0 0;
     font-family: 'Almarai', sans-serif;
     box-shadow: 0 0 13px rgb(38, 85, 145);
 }
@@ -135,7 +136,7 @@ button:hover{
 
 #texto{
     font-size: 20px;
-    padding: 40px 20px;
+    padding: 30px 20px;
     color: rgb(38, 85, 145);
 }
 

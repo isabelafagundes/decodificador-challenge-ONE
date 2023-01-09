@@ -9,7 +9,7 @@ btnCripto.addEventListener('click', function(e){
     
     e.preventDefault();
 
-    const regex = /\W|_/;
+
     const mensagem = document.querySelector('#input');
     let mensagemValue = mensagem.value;
     
@@ -17,7 +17,7 @@ btnCripto.addEventListener('click', function(e){
         alert("Digite um texto!");
     }else if(!( mensagemValue == (mensagemValue.toLowerCase()) )){
         alert("Use apenas letras minúsculas!");
-    }else if(regex.test(mensagemValue) == true){
+    }else if(/[A-Z-À-Ú-à-ù]/.test(mensagemValue)){
         alert("Não use caracteres especiais!");
     }else if(!(mensagemValue == '')){
         criptografar(mensagemValue);
@@ -36,10 +36,6 @@ btnDescri.addEventListener('click', function(e){
     if(mensagemValue == ''){
         alert("Digite um texto!");
         console.log(textoExibidoValue);
-    }else if(!( mensagemValue == (mensagemValue.toLowerCase()) )){
-        alert("Use apenas letras minúsculas!");
-    }else if(regex.test(mensagemValue) == true){
-        alert("Não use caracteres especiais!");
     }else if(!(mensagemValue == '')){
         descriptografar(mensagemValue);
         descriptografar(textoExibidoValue);
@@ -64,7 +60,7 @@ function criptografar(vogal){
             vogal = vogal.replaceAll('o', 'ober');
             vogal = vogal.replaceAll('u', 'ufat');
             exibirMensagem.innerHTML = vogal;
-            texto.innerHTML = '';
+            texto.style.display = 'none'
             mensagemValue = vogal;
             imagem.style.display = 'none';
             btnCopy.style.display = 'flex';
@@ -81,7 +77,7 @@ function descriptografar(palavra){
         palavra = palavra.replaceAll('ober', 'o');
         palavra = palavra.replaceAll('ufat', 'u');
         exibirMensagem.innerHTML = palavra;
-        texto.innerHTML = '';
+        texto.style.display = 'none'
         imagem.style.display = 'none';
         btnCopy.style.display = 'flex';
         mensagemValue = palavra;
