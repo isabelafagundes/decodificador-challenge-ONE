@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+body{
+    background: rgb(217, 226, 237);
+    font-family: 'Almarai', sans-serif;
+}
+
+header {
+    background: rgb(92, 157, 242);
+    padding: 40px;
+    height: 50px;
+}
+
+nav{
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    vertical-align: bottom;
+    padding: 5px 0;
+
+}
+
+nav li {
+    display: inline;
+}
+
+nav a{
+    color: white;
+    font-size: 40px;
+    text-align: right;
+}
+
+
+.caixa{
+    text-align: center;
+}
+
+.caixa li{
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px 50px;
+}
+
+.receber-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 470px;
+    font-family: 'Almarai', sans-serif;
+
+}
+
+.receber-mensagem textarea{
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 22px;
+    color: rgb(92, 157, 242);
+    background: rgb(217, 226, 237);
+    border: none;
+    resize: none;
+    font-family: 'Almarai', sans-serif;
+}
+
+.btn {
+    text-align: center;
+}
+
+.btn p {
+    padding-bottom: 10px;
+    color: #888888;
+    font-family: 'Almarai', sans-serif;
+}
+
+.btn button {
+    width: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Almarai', sans-serif;
+}
+
+#btn-cripto {
+    background: rgb(92, 157, 242);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+#btn-descri{
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(92, 157, 242);
+    color: rgb(92, 157, 242);
+}
+
+.exibir-mensagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 470px;
+    border-radius: 15px;
+    background: white;
+    border: 2px solid rgb(92, 157, 242);
+    white-space: normal;
+    padding: 20px  0 0 0;
+    font-family: 'Almarai', sans-serif;
+}
+
+.exibir-mensagem img{
+    width: 250px;
+    margin: 10px 20px;
+}
+
+#texto{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: rgb(38, 85, 145);
+}
+
+#exibir-msg {
+    font-size: 20px;
+    color: rgb(38, 85, 145);
+    padding-top: 20px;
+    text-align: center;
+    border: none;
+    resize: none;
+    width: 300px;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    font-family: 'Almarai', sans-serif;
+}
+
+#copy {
+    background: rgb(92, 157, 242);
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+textarea:focus {
+    outline: 0;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header>
+        <nav>
+                <ul>
+                    <li>
+                        <a href="https://github.com/isabelafagundes" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                    </li>
+        
+                    <li>
+                        <a href="https://www.linkedin.com/in/isabela-fagundes2004/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </li>
+        
+                    <li>
+                        <a href="mailto:isabelahidalgo.2004@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+                    </li>
+        
+                </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <ul class="caixa">
+            
+            <li>
+
+                <div class="receber-mensagem">
+    
+                    <textarea id="input" placeholder="Digite um texto..."></textarea>
+    
+                    <div class="btn">
+    
+                        <p><i class="fa fa-exclamation-triangle"></i> Apenas letras minúsculas e sem acento.</p>
+                        <button id="btn-cripto" class="criptografar-btn">Criptografar</button>
+                        <button id="btn-descri" class="descriptografar-btn">Descriptografar</button>
+    
+                    </div>
+                
+                </div>
+
+            </li>
+
+            <li>
+
+                <div class="exibir-mensagem">
+    
+                    <p id="texto">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    <img  class="imagem" src="./img/search.gif" alt="Lupa procurando decodificações">
+                    <textarea id="exibir-msg" rows="300" disabled="">Nenhuma mensagem encontrada</textarea>
+                    
+                    <button id="copy" style="display: none; text-align: center;" onclick="botaoCopiar()">Copiar</button>
+
+                    
+                </div>
+
+            </li>
+
+        </ul>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
