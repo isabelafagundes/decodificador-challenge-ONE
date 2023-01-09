@@ -3,6 +3,6 @@ Este foi um desafio sugerido pela Oracle e Alura, dentro do programa ONE, para d
 
 GitHub Pages: https://isabelafagundes.github.io/decodificador-challenge-ONE/
 
-![image](https://user-images.githubusercontent.com/104397121/211369186-9f77edc2-e997-4384-bf55-14bddfd0beea.png)
+![image](https://user-images.githubusercontent.com/104397121/211377258-22818aaa-244c-43fb-83d1-ec9260c7267e.png)
 
 
